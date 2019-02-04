@@ -6,3 +6,4 @@ RUN curl -sSL https://download.docker.com/linux/static/stable/x86_64/docker-${DO
     && tar zxf docker.tgz -C /tmp \
     && rm docker.tgz \
     && mv /tmp/docker/* /usr/local/bin
+RUN apt-get update; apt-get install -y jq
